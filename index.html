@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        
+       <div class="container" id="container">
+           <h1 id="title">Doston Ergashev Yaxshiydi  </h1>
+           <div class="image-container">
+               <span class="span span1"></span> 
+               <span class="span span2"></span>
+               <span class="span span3"></span>
+               <img id="cover" src="./img/Ending Isak Donielson.jpeg" alt="Isak">
+           </div>
+          
+      
+       
+       <div class="progress-container" id="progress-container">
+<div class="progress" id="progress"></div>
+       </div>
+
+<audio id="audio" src="./audio/Ending Isak Donielson.mp3"></audio>
+
+       <div class="time">
+        <span id="start">00:00</span>
+        <span id="end">00:00</span>
+    </div>
+       <div class="nav">
+           <buttton class="btn" id="prev" >
+               <i class="fas fa-backward"></i>
+           </buttton>
+           <buttton class="btn big" id="play" >
+            <i class="fas fa-play"></i>
+        </buttton>   
+         <buttton class="btn" id="next" >
+            <i class="fas fa-forward"></i>
+        </buttton>
+       </div>
+       
+       <form action="">
+           <div class="center">
+            <div class="form-element"> 
+        <div id="rangevalue">50</div>
+       
+           <input type="range" min="0" max="100" value="50" step="1" id="range" oninput="rangevalue.textContent = this.value">
+         
+            </div>
+            </div>
+       </form>
+     </div>
+
+
+
+    </section>
+    <!-- js -->
+    <script src="app.js"></script>
+</body>
+</html>
